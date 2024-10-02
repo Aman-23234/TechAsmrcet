@@ -1,0 +1,124 @@
+/* Footer General Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer About Section */
+.footer-about {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.footer-about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-about p {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* Footer Links Section */
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.footer-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Contact Section */
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.footer-contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Footer Social Media Section */
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #28a745;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #222;
+    color: #bbb;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

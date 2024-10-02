@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <style>
+        * {
+            box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Removes default margin */
+        }
+
+        .form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Fixed width for the form */
+            text-align: center; /* Center text inside the form */
+        }
+
+        h2 {
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%; /* Full width inputs */
+            padding: 10px; /* Inner spacing */
+            margin: 10px 0; /* Space above and below the inputs */
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 4px; /* Rounded corners */
+            box-sizing: border-box; /* Includes padding and border in element's total width */
+        }
+
+        .btnn {
+            background-color: #4285F4; /* Button color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            padding: 10px; /* Inner spacing */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            width: 100%; /* Full width button */
+            margin-top: 10px; /* Space above the button */
+        }
+
+        .btnn:hover {
+            background-color: #357ae8; /* Darker button color on hover */
+        }
+
+        .link {
+            margin: 15px 0; /* Space above and below the link */
+        }
+
+        .liw {
+            margin: 10px 0; /* Space above and below the "Join with" text */
+        }
+
+        .icons {
+            display: flex; /* Flexbox for icons */
+            justify-content: center; /* Center icons */
+            margin-top: 10px; /* Space above the icons */
+        }
+
+        .icons a {
+            margin: 0 5px; /* Space between icons */
+            text-decoration: none; /* No underline on links */
+            color: #666; /* Gray color */
+        }
+
+        .icons ion-icon {
+            font-size: 24px; /* Icon size */
+        }
+    </style>
+</head>
+<body>
+
+<div class="form">
+    <h2>Join Us</h2>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+    <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+    <button class="btnn" id="joinBtn">Join</button>
+
+    <p class="link">Already have an account?<br>
+    <a href="login.html">Login here</a></p>
+    <p class="liw">Join with</p>
+
+    <div class="icons">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('joinBtn').onclick = function() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Basic validation
+        if (name && email && password) {
+            alert(`Successfully signed up with Name: ${name} and Email: ${email}`);
+            // Here you can add your signup logic, such as sending the details to your server.
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
+</script>
+
+</body>
+</html>
+
